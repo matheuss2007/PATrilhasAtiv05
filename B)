@@ -1,0 +1,22 @@
+using System;
+
+namespace atv5_1
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("me informe uma data");
+			DateTime data1 = new DateTime(2015, 10, 10);
+			DateTime data2 = new DateTime(2025, 1, 10);
+			TimeSpan diferenca = data2 - data1;
+			Console.WriteLine("diferença em dias: " +  diferenca.TotalDays);
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
