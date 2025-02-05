@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+
+namespace higorrafael
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+	      
+ 
+           List<DateTime> feriados = new List<DateTime>
+        {
+            new DateTime(DateTime.Now.Year, 1, 1), 
+            new DateTime(DateTime.Now.Year, 4, 21),
+            new DateTime(DateTime.Now.Year, 9, 7), 
+            new DateTime(DateTime.Now.Year, 10, 12),
+            new DateTime(DateTime.Now.Year, 11, 15),
+            new DateTime(DateTime.Now.Year, 12, 25)
+        };
+
+        Console.WriteLine("Digite uma data (formato dd/MM/yyyy):");
+        
+        DateTime dataInformada;
+        
+        
+        if (DateTime.TryParse(Console.ReadLine(), out dataInformada))
+        	
+        	
+        {
+            DateTime dataComAnoAtual = new DateTime(DateTime.Now.Year, dataInformada.Month, dataInformada.Day);
+
+            
+            bool isFeriado = false;
+            
+            foreach (var feriado in feriados)
+            	
+            {
+                if (feriado.Month == dataComAnoAtual.Month && feriado.Day == dataComAnoAtual.Day)
+                	
+                {
+                    isFeriado = true;
+                    break;
+                    
+                }
+            }
+            
+
+            if (isFeriado)
+            	
+            {
+            	
+                Console.WriteLine("A data informada é um feriado nacional!");
+                
+            }
+            
+            else
+            	
+            {
+            	
+                Console.WriteLine("A data informada não é um feriado nacional.");
+                
+            }
+        }
+        
+        else
+        	
+        {
+        	
+            Console.WriteLine("Formato de data inválido.");
+            
+        }
+ 
+	    
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
