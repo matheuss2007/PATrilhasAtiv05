@@ -6,7 +6,7 @@ namespace atv5_1
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("me informe as horas!");
+			Console.WriteLine("me informe as horas é a data atual!");
 			
 			DateTime dataAtual = DateTime.Now;
 			Console.WriteLine(dataAtual);
