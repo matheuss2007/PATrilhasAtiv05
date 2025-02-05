@@ -1,0 +1,21 @@
+using System;
+
+namespace atv5_1
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("me informe as horas!");
+			
+			DateTime dataAtual = DateTime.Now;
+			Console.WriteLine(dataAtual);
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
