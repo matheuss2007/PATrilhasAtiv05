@@ -1,0 +1,27 @@
+using System;
+
+namespace atv5_1
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			DateTime data1;
+			DateTime data2 = new DateTime (2025/02/05);
+			
+			Console.WriteLine("me informe uma data");
+			 data1 = DateTime.Parse(Console.ReadLine());
+			 
+		Console.WriteLine(data1);
+		Console.WriteLine(data2);
+			int diferencaEmAnos = data1.Year - data2.Year;
+			Console.WriteLine("sua idade é: " +  diferencaEmAnos);
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
