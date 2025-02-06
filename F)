@@ -1,0 +1,37 @@
+using System;
+
+namespace higor2
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+		
+			 Console.WriteLine("Digite -1, 0 ou 1:");
+  
+        int n = int.Parse(Console.ReadLine());
+        
+        switch (n)
+        {
+        	case 1 :
+        		Console.WriteLine("o valor digitado é positivo! " );
+                break;
+                
+               case  -1:
+                Console.WriteLine("o valor digitado é negativo");
+                break;
+                
+               case 0 :
+                Console.WriteLine("O valor é igual a zero");
+                break;
+                default:
+                Console.WriteLine("O valor é invalido");
+                break;	
+           }
+        
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
