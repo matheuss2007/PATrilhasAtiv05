@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+
+namespace atv5
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+		 Console.WriteLine("Escolha uma opção:");
+        Console.WriteLine("OPÇÃO 1");
+        Console.WriteLine("OPÇÃO 2");
+        Console.WriteLine("OPÇÃO 3");
+  
+        int opcao = int.Parse(Console.ReadLine());
+        
+        switch (opcao)
+        {
+            case 1:
+                Console.WriteLine("Bem-vindo ao programa!");
+                break;
+            case 2:
+                Console.WriteLine("A data e hora atual é: " + DateTime.Now);
+                break;
+            case 3:
+                Console.WriteLine("Até logo! Volte sempre!");
+                break;
+            default:
+                Console.WriteLine("Opção inválida! Escolha 1, 2 ou 3.");
+                break;	
+           }
+        
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
